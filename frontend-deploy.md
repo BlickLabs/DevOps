@@ -49,7 +49,7 @@ $ exit
 
 #### Setting up the domain
 
-Request to the project leader access to the domain, and setup the records, heres an example
+Request to the project leader access to the DNS manager, and setup the records, heres an example
 
 ![records](https://assets.digitalocean.com/articles/redirect/dns_a_records.png)
 
