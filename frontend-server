@@ -2,7 +2,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /home/<username>/<project_name>/<dist_folder>/;
+    root </full/path/to/dist/folder>;
     index index.html index.htm;
 
     server_name <www.domain.com> <domain.com>;
