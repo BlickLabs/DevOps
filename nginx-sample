@@ -1,0 +1,29 @@
+upstream <project> {
+    server 127.0.0.1:<port>;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    client_max_body_size 4G;
+    client_header_timeout 600s;
+
+    server_name <domain>;
+
+    location /static {
+        autoindex on;
+        alias /staticfiles/full/path;
+    }
+
+    location /media {
+        autoindex on;
+        alias /media/full/path;
+    }
+
+    location / {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_pass http://<project>/;
+    }
+}
