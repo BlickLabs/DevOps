@@ -1,4 +1,4 @@
-# DevOps stuff
+# Grails
 
 ## Index<a name="index"></a> 
 
@@ -105,7 +105,7 @@ Also you can copy the _application.yml.template_ into _application.yml_ and just
 #### As root
 
 1. Create a folder called `/opt/deployment/`
-2. Copy the file inside the `resources` dir of this folder. The file is `grailsScript.sh`
+2. Copy the file inside the `resources` dir of this folder. The file is `grailsScript.sh` [file](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.service)
 3. Keep reading
 
 ### Operating Service for deploying a Java project at AWS (Ubuntu).<a name="aws-service-ubuntu"></a> <sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>

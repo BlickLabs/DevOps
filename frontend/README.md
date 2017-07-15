@@ -10,8 +10,8 @@ All the frontend projects lives in the user ``` frontend ```, this is because if
 #### Setting up the project
 
 ```bash
-$ sudo su frontend
-$ git clone <repo_link>
+sudo su frontend
+git clone <repo_link>
 ```
 To compile the files check [layout](https://github.com/BlickLabs/generator-frontend-dev) docs
 
@@ -26,14 +26,14 @@ $ sudo apt-get install nginx
 #### Setting up NGINX
 
 ```bash
-$ sudo -s
-$ cd /etc/nginx/
-$ vim sites-available/<proyecto>
-$ ln -s sites-available/<proyecto> sites-enabled/
-$ vi sites-available/<proyecto>
+sudo -s
+cd /etc/nginx/
+vim sites-available/<proyecto>
+ln -s sites-available/<proyecto> sites-enabled/
+vi sites-available/<proyecto>
 ```
 
-Use this [sample](https://github.com/BlickLabs/devops/resources/blob/master/frontend-server) to configure NGINX
+Use this [sample](https://github.com/BlickLabs/DevOps/blob/master/resources/frontend-server) to configure NGINX
 
  * In line 5 put the complete path to the compiled files folder of the project
  * In line 8 put de domain for the project
@@ -41,8 +41,8 @@ Use this [sample](https://github.com/BlickLabs/devops/resources/blob/master/fron
 Finally restart nginx 
 
 ```bash
-$ service nginx restart
-$ exit
+service nginx restart
+exit
 ```
 
 #### Setting up the domain
@@ -60,5 +60,5 @@ For project updates.
 * Restart nginx
 
 ```bash
-$ sudo service nginx restart
+sudo service nginx restart
 ```

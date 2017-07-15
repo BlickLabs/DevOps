@@ -91,7 +91,7 @@ Test running the project using
 
 ### Setting up deploy scripts.<a name="scripts-setup"></a><sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
 
-Use the [deploy-sample.sh](https://github.com/BlickLabs/devops/resources/blob/master/deploy-sample.sh) file to setup 
+Use the [deploy-sample.sh](https://github.com/BlickLabs/DevOps/blob/master/resources/deploy-sample.sh) file to setup 
 up the project startup
 
 ```bash
@@ -108,7 +108,7 @@ Run the project using the script, everything is is correct if the process not st
 ./deploy.sh
 ```
 
-The next step is setup nginx use the [nginx-sample](https://github.com/BlickLabs/devops/resources/tree/master/blob/nginx-sample) file
+The next step is setup nginx use the [nginx-sample](https://github.com/BlickLabs/DevOps/blob/master/resources/nginx-sample) file
 
 ```bash
 sudo -s
@@ -122,7 +122,7 @@ sudo service nginx restart
 #### Ubuntu 14.04
 
 The final step is create a system service to keep running the application, it can change between OS but in this repo its a 
-[sample](https://github.com/BlickLabs/devops/service/blob/master/service_sample.conf)
+[sample](https://github.com/BlickLabs/DevOps/blob/master/resources/service_sample.conf)
 
 ```bash
 cd /etc/init
@@ -134,7 +134,7 @@ sudo service <project> status
 #### Ubuntu 16.04
 
 In case the services is on Ubuntu 16.04, we have to modify a bit the process. 
-We need to create a service inside `/lib/systemd/system/` with the *ProjectName* and modify the next [template](https://github.com/BlickLabs/devops/resources/blob/master/projectService.conf).
+We need to create a service inside `/lib/systemd/system/` with the *ProjectName* and modify the next [template](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.conf).
 
 > *Don't forget to modify the ExecStart line inside the project to point to the deploy script you modified!*
 
