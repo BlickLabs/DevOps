@@ -1,11 +1,10 @@
 # Blick DevOps
 
-## Index<a name="index"></a>
+## Index <a name="index"></a>
 
-* [Backend (Django)](https://github.com/BlickLabs/devops/django/blob/master/django-deploy.md)
-* [Update Django Projects](https://github.com/BlickLabs/devops/django/blob/master/django-update.md)
+* [Backend (Django)](https://github.com/BlickLabs/devops/django/blob/master/README.md)
 * [Grails](https://github.com/BlickLabs/devops/grails/blob/master/README.md)
-* [Frontend](https://github.com/BlickLabs/devops/blob/frontend/master/frontend-deploy.md)
+* [Frontend](https://github.com/BlickLabs/devops/blob/frontend/master/README.md)
 * [Tips and General Aspects](#general-aspects)
 
 ### Tips and General Aspects<a name="general-aspects"></a>
