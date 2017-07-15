@@ -8,14 +8,8 @@
 * [Properties externalization](#properties)
 * [Preparing the environment for running/deploying](#preparing-environment)
 * [AWS: Connection via SSH](#aws-ssh-connection)
-* [AWS: Cierralo Service (Ubuntu)](#aws-service-ubuntu)
-* [AWS: Cierralo logs](#aws-logs)
-
-------
-
-![](http://clipart-library.com/data_images/320899.jpg)
-
-___This document will be changing a lot, until we get the first stable version, Proceed with caution and update if needed___
+* [AWS: System Service (Ubuntu)](#aws-service-ubuntu)
+* [AWS: Logs](#aws-logs)
 
 ------
 
@@ -105,7 +99,7 @@ Also you can copy the _application.yml.template_ into _application.yml_ and just
 #### As root
 
 1. Create a folder called `/opt/deployment/`
-2. Copy the file inside the `resources` dir of this folder. The file is `grailsScript.sh` [file](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.service)
+2. Copy the file inside the `resources` dir of this folder. The file is `grailsScript.sh`. Here's the [file](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.service)
 3. Keep reading
 
 ### Operating Service for deploying a Java project at AWS (Ubuntu).<a name="aws-service-ubuntu"></a> <sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
@@ -154,7 +148,7 @@ Finally you can use the service, just type on the terminal
 sudo service serviceName [start|stop|restart]
 ```
 
-###<a name="aws-logs"></a> AWS: Cierralo logs.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
+### AWS: Cierralo logs.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub><a name="aws-logs"></a>
 
 Logback (the logging engine provided by grails) can handle several environments and logging process. For development environments, the whole stacktrace appears on the STDOUT (terminal) and also the log is appended to a file, located inside the _build/_ directory. 
 

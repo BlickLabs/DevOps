@@ -2,7 +2,7 @@
 
 ## Index <a name="index"></a>
 
-* [Backend (Django)](https://github.com/BlickLabs/DevOps/tree/master/django)
+* [Django](https://github.com/BlickLabs/DevOps/tree/master/django)
 * [Grails](https://github.com/BlickLabs/DevOps/tree/master/grails)
 * [Frontend](https://github.com/BlickLabs/DevOps/tree/master/frontend)
 * [Tips and General Aspects](#general-aspects)
