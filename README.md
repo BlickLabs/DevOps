@@ -76,7 +76,7 @@ Save and exit. This configures Nginx to redirect requests to "www.example.com" t
 
 #### Database roles (MySQL)
 
-Enter as `root` and create a new user.
+Enter as `root` to MySQL and create a new user.
 
 ```
 CREATE DATABASE <DATABASE_NAME> CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -84,3 +84,35 @@ CREATE USER 'username'@'localhost' IDENTIFIED BY 'some_password';
 GRANT ALL PRIVILEGES ON <DATABASE_NAME>.* TO 'username'@'localhost';
 FLUSH PRIVILEGES;
 ```
+
+#### Create a swap partition
+
+> As root!
+
+- https://stackoverflow.com/a/17174672
+
+You can add a 1 GB swap to your instance with these commands:
+```bash
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
+sudo mkswap /swapfile
+sudo chmod 600 /swapfile
+sudo swapon /swapfile
+```
+To enable it by default after reboot, add this line to /etc/fstab:
+
+```bash
+/swapfile swap swap defaults 0 0
+
+```
+
+#### Configure swapiness
+
+- https://askubuntu.com/questions/103915/how-do-i-configure-swappiness
+
+#### Install java (Ubuntu 16.04)
+
+- https://www.digitalocean.com/community/tutorials/instalar-java-en-ubuntu-con-apt-get-es
+
+#### Generate SSH Keys
+
+- https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
