@@ -21,7 +21,7 @@ java_location=$(which java)
 # Help function
 #
 usage() {
-    echo "***** Kerma Partners deployment script *****\n";
+    echo "***** Grails deployment script *****\n";
     echo " -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  \n";
     echo "Usage: $0 -flag1 -flag2 ... \n";
     echo " -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  \n";
@@ -62,7 +62,7 @@ done
 #
 gradle_location="${project_location}/gradlew $quiet"
 gradle_clean="$gradle_location clean"
-run_war="$java_location -jar kerma-partners-backend-*.war"
+run_war="$java_location -jar *.war"
 #
 # Entering the project's home
 #

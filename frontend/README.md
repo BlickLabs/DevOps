@@ -1,9 +1,7 @@
 ## Frontend Projects
 
 For this projects we use a [layout](https://github.com/BlickLabs/generator-frontend-dev) designed by 
-[@AlanSanchezP](https://github.com/AlanSanchezP), all the information about the use of the layout 
-is in the project Readme
-
+[@AlanSanchezP](https://github.com/AlanSanchezP), all the information about the use of the layout is in the project Readme
 
 ### Deploy
 
@@ -35,7 +33,7 @@ $ ln -s sites-available/<proyecto> sites-enabled/
 $ vi sites-available/<proyecto>
 ```
 
-Use this [sample](https://github.com/BlickLabs/devops/blob/master/frontend-server) to configure NGINX
+Use this [sample](https://github.com/BlickLabs/devops/resources/blob/master/frontend-server) to configure NGINX
 
  * In line 5 put the complete path to the compiled files folder of the project
  * In line 8 put de domain for the project
@@ -64,4 +62,3 @@ For project updates.
 ```bash
 $ sudo service nginx restart
 ```
-

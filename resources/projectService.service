@@ -1,0 +1,6 @@
+[Unit]
+Description=ServiceName application server
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c "/PATH/TO/DEPLOY.sh > /var/log/serviceName.log 2>&1"

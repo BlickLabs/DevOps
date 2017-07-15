@@ -105,7 +105,7 @@ Also you can copy the _application.yml.template_ into _application.yml_ and just
 #### As root
 
 1. Create a folder called `/opt/deployment/`
-2. Copy the file inside the `resources` dir of this folder. The file is `deploymentScript.sh`
+2. Copy the file inside the `resources` dir of this folder. The file is `grailsScript.sh`
 3. Keep reading
 
 ### Operating Service for deploying a Java project at AWS (Ubuntu).<a name="aws-service-ubuntu"></a> <sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub>
@@ -135,12 +135,12 @@ Description=ServiceName application server
 
 [Service]
 Type=simple
-ExecStart=/bin/sh -c "/opt/deployment/deploymentScript.sh -h PROJECT_HOME -e ENVIRONMENT -p PORT -l LOG_LOCATION-c -a -r > /var/log/serviceName.log 2>&1"
+ExecStart=/bin/sh -c "/opt/deployment/grailsScript.sh -h PROJECT_HOME -e ENVIRONMENT -p PORT -l LOG_LOCATION-c -a -r > /var/log/serviceName.log 2>&1"
 ```
 
 This will automatically create the service on the operating system, this can help us to start/stop the service using just one command. 
 
-> **/opt/deployment/deploymentScript.sh** it's part of this repository and is a utility to deploy/run the project. Contains a basic usage, just enter to the project and type on the terminal _/opt/deployment/deploymentScript.sh_ and see the help
+> **/opt/deployment/grailsScript.sh** it's part of this repository and is a utility to deploy/run the project. Contains a basic usage, just enter to the project and type on the terminal _/opt/deployment/grailsScript.sh_ and see the help
 
 After the service is created, we need to reload the system's daemons, this can be done using the next command.
 
