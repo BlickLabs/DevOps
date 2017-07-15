@@ -29,7 +29,7 @@ To install _MariaDB_ on your system, just type on your terminal prompt:
 sudo apt-get update
 sudo apt-get install mysql-server-5.7 -y
 ```
-After configuring and setting the passwords, the install will finish. Now you need to create a user and cierralo database, access to the mysql server using the next bash clause.
+After configuring and setting the passwords, the install will finish. Now you need to create a user and database, access to the mysql server using the next bash clause.
 
 ```bash
 sudo mysql -u root -p
@@ -43,7 +43,7 @@ This will ask you for the password you already set and will log you in to the My
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'some_password';
 GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost';
 FLUSH PRIVILEGES;
-CREATE DATABASE cierralo_core CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE DATABASE CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 Logout from MySQL server and the log in using your new username.
 
@@ -68,9 +68,9 @@ command.
 
 ```bash
 gradle flywayMigrate -Pflyway.user=YOUR_USER\
--Pflyway.schemas=cierralo_core\
+-Pflyway.schemas=DATABASE\
 -Pflyway.password=YOUR_PASSWORD\
--Pflyway.url=jdbc:mysql://localhost/cierralo_core\
+-Pflyway.url=jdbc:mysql://localhost/DATABASE\
 -Pflyway.baselineOnMigrate=true\
 -Pflyway.baselineVersion=1
 ```
@@ -148,7 +148,7 @@ Finally you can use the service, just type on the terminal
 sudo service serviceName [start|stop|restart]
 ```
 
-### AWS: Cierralo logs.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub><a name="aws-logs"></a>
+### AWS: Logs.<sub><sub><sub><sub>[Index](#index)</sub></sub></sub></sub><a name="aws-logs"></a>
 
 Logback (the logging engine provided by grails) can handle several environments and logging process. For development environments, the whole stacktrace appears on the STDOUT (terminal) and also the log is appended to a file, located inside the _build/_ directory. 
 
