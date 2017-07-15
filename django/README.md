@@ -134,7 +134,8 @@ sudo service <project> status
 #### Ubuntu 16.04
 
 In case the services is on Ubuntu 16.04, we have to modify a bit the process. 
-We need to create a service inside `/lib/systemd/system/` with the *ProjectName* and modify the next [template](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.conf).
+We need to create a service inside `/lib/systemd/system/` with the *ProjectName* and 
+modify the next [template](https://github.com/BlickLabs/DevOps/blob/master/resources/projectService.service).
 
 > *Don't forget to modify the ExecStart line inside the project to point to the deploy script you modified!*
 
