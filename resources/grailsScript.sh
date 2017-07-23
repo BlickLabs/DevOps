@@ -60,7 +60,7 @@ done
 #
 # Commands to be executed
 #
-gradle_location="${project_location}/gradlew $quiet"
+gradle_location="${project_location}/gradlew --no-daemon $quiet"
 gradle_clean="$gradle_location clean"
 run_war="$java_location -jar *.war"
 #
