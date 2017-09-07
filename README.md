@@ -116,3 +116,7 @@ To enable it by default after reboot, add this line to /etc/fstab:
 #### Generate SSH Keys
 
 - https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+#### Remove file extension via Nginx
+
+http://cobwwweb.com/remove-html-extension-and-trailing-slash-in-nginx-config
