@@ -107,8 +107,8 @@ touch /etc/nginx/sites-enabled/project-<NOMBRE_PROYECTO_O_BLOG>
 
 ```nginx
 server {
-	listen 80;
-    listen [::]:80 ipv6only=off;
+    listen 80;
+    listen [::]:80;
     server_name <NOMBRE_DOMINIO_1> <NOMBRE_DOMINIO_2>;
 
     root /home/<NOMBRE_PROYECTO_O_BLOG>/blog/wordpress;
