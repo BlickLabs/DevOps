@@ -150,7 +150,7 @@ nginx -t
 > *Este proceso se debe generar como super usuario!*
 
 ```bash
-service nginx reload
+service nginx restart
 ```
 
 * Configura los DNS para que apunten al servidor correspondiente
