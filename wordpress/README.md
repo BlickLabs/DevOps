@@ -3,6 +3,7 @@
 * Acceder al servidor: (es necesario contar con el archivo pem)
 
 ```bash
+ssh -i ~/.ssh/amazon_keys/blick.pem ubuntu@SERVIDOR_DE_PRODUCCION_O_DIRECCION_IP -o ServerAliveI
 nterval=60
 ```
 
@@ -26,37 +27,37 @@ sudo apt-get install build-essential php-fpm php-mysql php-mcrypt php-cli php-cu
 sudo apt-get install nginx
 ```
 
-* _Como el usuario logeado_, crear carpeta en `home` para blog
+* _Como el usuario recien creado_, crear carpeta en `home` para blog
 
 ```bash
 mkdir -p ~/blog
 ```
 
-* _Como el usuario logeado_, Entrar a la carpeta de blog
+* _Como el usuario recien creado_, Entrar a la carpeta de blog
 
 ```bash
 cd ~/blog
 ```
 
-* _Como el usuario logeado_, Descargar Wordpress
+* _Como el usuario recien creado_, Descargar Wordpress
 
 ```bash
 curl -O https://wordpress.org/latest.tar.gz
 ```
 
-* _Como el usuario logeado_, Descomprimir Wordpress
+* _Como el usuario recien creado_, Descomprimir Wordpress
 
 ```bash
 tar xzvf latest.tar.gz
 ```
 
-* _Como el usuario logeado_, Crear el archivo de configuración de wordpress (tomando el que viene como ejemplo dentro del proyecto)
+* _Como el usuario recien creado_, Crear el archivo de configuración de wordpress (tomando el que viene como ejemplo dentro del proyecto)
 
 ```bash
 cp wordpress/wp-config-sample.php wordpress/wp-config.php
 ```
 
-* _Como el usuario logeado_, Crear carpeta de upgrade de wordpress
+* _Como el usuario recien creado_, Crear carpeta de upgrade de wordpress
 
 ```bash
 mkdir wordpress/wp-content/upgrade
