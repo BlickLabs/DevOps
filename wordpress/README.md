@@ -3,7 +3,6 @@
 * Acceder al servidor: (es necesario contar con el archivo pem)
 
 ```bash
-ssh -i ~/.ssh/amazon_keys/blick.pem ubuntu@sandbox.static.getmore.mx -o ServerAliveI
 nterval=60
 ```
 
