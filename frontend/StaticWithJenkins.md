@@ -19,6 +19,6 @@ For this projects we use a [layout](https://github.com/BlickLabs/generator-front
 
 ### Things to consider
 
-* The gh-pages branch  *MUST* contains a file called `project-<PROJECT_NAME>`. This file will contain the nginx virtual server information, follow the example in this [file](https://github.com/BlickLabs/DevOps/blob/master/resources/frontend-server). Don't forget to change or add the domains required.
+* The gh-pages branch *MUST* contain a file called `project-<PROJECT_NAME>` in the root of the project. This file will configure the nginx virtual server information, follow the example in this [file](https://github.com/BlickLabs/DevOps/blob/master/resources/frontend-server). Don't forget to change or add the domains required.
 * The `deploy` task in gulp, must copy the nginx file, check `rer` repository or reach @soycamis for further information.
 
