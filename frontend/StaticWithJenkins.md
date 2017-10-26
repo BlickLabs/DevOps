@@ -1,7 +1,6 @@
-## Frontend Projects
+## Static Deploy with Jenkins
 
-For this projects we use a [layout](https://github.com/BlickLabs/generator-frontend-dev) designed by 
-[@AlanSanchezP](https://github.com/AlanSanchezP), all the information about the use of the layout is in the project Readme
+This job deploys static projects in the desired server, only works with static web pages. For further information reach @jresendiz27.
 
 ### Deploy
 
@@ -21,4 +20,13 @@ For this projects we use a [layout](https://github.com/BlickLabs/generator-front
 
 * The gh-pages branch *MUST* contain a file called `project-<PROJECT_NAME>` in the root of the project. This file will configure the nginx virtual server information, follow the example in this [file](https://github.com/BlickLabs/DevOps/blob/master/resources/frontend-server). Don't forget to change or add the domains required.
 * The `deploy` task in gulp, must copy the nginx file, check `rer` repository or reach @soycamis for further information.
-
+* **'Cause we're paranoid, always open a `ssh` connection to the production server you will deploy, and log in as root, in case something starts a fire, using that connection will help us to fix the issue!!** 
+> To open an ssh connection: 
+```bash
+ssh -i <KEY_FILE>.pem ubuntu@<SERVER_URL>.getmore.mx -o ServerAliveInterval=60
+```
+Inside the server, log in as root:
+```bash
+sudo su 
+```
+_**Don't close the connection until the site is successfully deployed!**_
