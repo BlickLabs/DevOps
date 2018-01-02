@@ -6,6 +6,7 @@
 * [Grails](https://github.com/BlickLabs/DevOps/tree/master/grails)
 * [Frontend](https://github.com/BlickLabs/DevOps/tree/master/frontend)
 * [Tips and General Aspects](#general-aspects)
+* [Common problems](#common-problems)
 
 ### Tips and General Aspects<a name="general-aspects"></a>
 
@@ -120,3 +121,10 @@ To enable it by default after reboot, add this line to /etc/fstab:
 #### Remove file extension via Nginx
 
 http://cobwwweb.com/remove-html-extension-and-trailing-slash-in-nginx-config
+
+### Common problems<a name="common-problems"></a>
+
+#### Commit.js 
+
+You might have an issue with the `generator` when you're trying to deploy. In case the error is related with `commit` you should paste the next [file](https://raw.githubusercontent.com/BlickLabs/DevOps/master/resources/commit.js) inside your `node_modules` directory, considering the next route `node_modules/gift/lib/commit.js`
+> **_the route might change too!_**.
